@@ -7,5 +7,4 @@ class Recipe < ActiveRecord::Base
   def self.quick_recipes
     where("cooking_time < ?", 30)
   end
-
 end
